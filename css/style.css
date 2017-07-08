@@ -253,7 +253,7 @@
 
 .meal {
   box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
-  border-radius: 11px;
+  border-radius: 16px;
   overflow: hidden;
   transition: all 0.4s;
 }
@@ -405,7 +405,7 @@
 
 .gallery-item {
   overflow: hidden;
-  border-radius: 16px;
+  border-radius: 4px;
 }
 
 .gallery-item img {
@@ -431,7 +431,7 @@
 }
 
 .pricing-plan {
-  border-radius: 11px;
+  border-radius: 16px;
   /* width: 100%; */
 }
 
@@ -446,6 +446,14 @@
   padding: 4.8rem;
   position: relative;
   overflow: hidden;
+}
+
+.pricing-plan--starter .list-item:last-child {
+  color: #999;
+}
+
+.pricing-plan--starter .list-icon:last-child {
+  color: #ffb4ab;
 }
 
 .pricing-plan--complete::after {
@@ -558,7 +566,7 @@
   grid-template-columns: 2fr 1fr;
   /* background-color: #8bb277; */
   box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
-  border-radius: 11px;
+  border-radius: 16px;
 
   background-image: linear-gradient(to right bottom, #eaf0db, #8bb277);
   overflow: hidden;

@@ -79,6 +79,7 @@ html {
   /* Percentage of user's browser font-size setting */
   font-size: 62.5%;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -279,6 +280,7 @@ body {
 
 .list-icon {
   color: #96b24d;
+  font-size: 2.4rem;
 }
 
 *:focus {
@@ -303,4 +305,48 @@ body {
 
 strong {
   font-weight: 500;
+}
+
+/**************************/
+/* Scroll Animation */
+/**************************/
+
+.anim {
+  opacity: 0;
+}
+
+@keyframes fade-bottom {
+  from {
+    transform: translateY(15px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-left {
+  from {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-right {
+  from {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
