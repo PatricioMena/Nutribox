@@ -4,47 +4,55 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-  <!-- Always include this line of code!!! -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="preconnect" href="https://fonts.gstatic.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 
+
+  <!-- Icons -->
+  <link rel="stylesheet" type="text/css" href="https://unpkg.com/@phosphor-icons/web@2.0.3/src/bold/style.css" />
+  <link rel="stylesheet" type="text/css" href="https://unpkg.com/@phosphor-icons/web@2.0.3/src/fill/style.css" />
+
+  <!-- CSS -->
   <link rel="stylesheet" href="css/general.css" />
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/queries.css" />
 
+  <!-- From patterns.css -->
   <link href="https://unpkg.com/pattern.css" rel="stylesheet">
-
-  <script src="https://unpkg.com/@phosphor-icons/web"></script>
-  <script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule="" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"></script>
 
   <title>Omnifood</title>
 </head>
 <body>
   <header class="header">
-    <a href="#">
-      <img class="logo" alt="Omnifood logo" src="img/omnifood-logo.png" />
-    </a>
+    <div class="nav-wraper">
+      <a href="#">
+        <img class="logo" alt="Omnifood logo" src="img/NutriBox.svg" />
+      </a>
 
-    <nav class="main-nav">
-      <ul class="main-nav-list">
-        <li><a class="main-nav-link" href="#">Como funciona</a></li>
-        <li><a class="main-nav-link" href="#">Platillos</a></li>
-        <li><a class="main-nav-link" href="#">Testimonios</a></li>
-        <li><a class="main-nav-link" href="#">Precios</a></li>
-        <li><a class="main-nav-link nav-cta" href="#">Comienza </a></li>
-      </ul>
-    </nav>
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li><a class="main-nav-link" href="#">Como funciona</a></li>
+          <li><a class="main-nav-link" href="#">Platillos</a></li>
+          <li><a class="main-nav-link" href="#">Testimonios</a></li>
+          <li><a class="main-nav-link" href="#">Precios</a></li>
+          <li><a class="main-nav-link nav-cta" href="#">Comienza </a></li>
+        </ul>
+      </nav>
 
-    <button class="btn-mobile-nav">
-      <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
-      <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
-    </button>
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      </button>
+    </div>
+
   </header>
 
   <main>
+
     <section class="section-hero">
       <div class="hero">
         <div class="hero-text-box">
@@ -56,7 +64,7 @@
           </p>
           <div class="btn-wrapper">
             <a href="#" class="btn btn--full">Inicia una dieta balanceada</a>
-            <a href="#" class="btn btn--outline">Conoce más <i class="ph-fill ph-arrow-down"></i></a>
+            <a href="#" class="btn btn--outline">Conoce más</a>
           </div>
 
           <div class="delivered-meals">
@@ -119,7 +127,7 @@
 
         <!-- STEP 02 -->
         <div class="step-img-box">
-          <img src="img/app/app-screen-2.png" class="step-img" alt="iPhone app
+          <img src="img/app/Step-02.png" class="step-img" alt="iPhone app
             meal approving plan screen" />
         </div>
         <div class="step-text-box">
@@ -138,7 +146,7 @@
           </p>
         </div>
         <div class="step-img-box">
-          <img src="img/app/app-screen-3.png" class="step-img" alt="iPhone app
+          <img src="img/app/Step-03.png" class="step-img" alt="iPhone app
             delivery screen" />
         </div>
       </div>
@@ -181,14 +189,14 @@
           <img src="img/meals/meal-2.jpg" class="meal-img" alt="Avocado Salad" />
           <div class="meal-content">
             <div class="meal-tags">
-              <span class="tag tag--vegan">Vegan</span>
+              <span class="tag tag--vegan">Vegana</span>
               <span class="tag tag--paleo">Paleo</span>
             </div>
-            <p class="meal-title">Avocado Salad</p>
+            <p class="meal-title">Ensalada de Aguacate</p>
             <ul class="meal-attributes">
               <li class="meal-attribute">
                 <i class="ph-fill ph-fire meal-icon"></i>
-                <span><strong>400</strong> calories</span>
+                <span><strong>400</strong> calorías</span>
               </li>
               <li class="meal-attribute">
                 <i class="ph-fill ph-fork-knife meal-icon"></i>
@@ -302,7 +310,7 @@
 
             <div class="testimonial-body">
               <blockquote class="testimonial-text">
-                Contraté NutriBox para toda la familia. ¡Nos libera muchísimo tiempo! Además, todo es orgánico y vegano y sin plástico.
+                Contraté NutriBox para toda la familia. ¡Nos libera muchísimo tiempo! Además, todos los ingredientes son orgánicos y sin generar desperdicios plásticos.
                 <!-- Inexpensive, healthy and great-tasting meals, without even
                 having to order manually! It feels truly magical. -->
               </blockquote>
@@ -470,31 +478,32 @@
 
       <div class="container grid grid--4-cols">
         <div class="feature">
-          <ion-icon class="feature-icon" name="infinite-outline"></ion-icon>
+          <i class="feature-icon ph-bold ph-infinity"></i>
           <p class="feature-title">¡Nunca vuelvas a cocinar!</p>
           <p class="feature-text">
             Nuestras suscripciones cubren los 365 dias del año, incluso en días festivos.
           </p>
         </div>
         <div class="feature">
-          <ion-icon class="feature-icon" name="nutrition-outline"></ion-icon>
+          <i class="feature-icon ph-bold ph-leaf"></i>
           <p class="feature-title">Local y orgánico</p>
           <p class="feature-text">
             Usamos únicamente productos locales, frescos y orgánicos.
           </p>
         </div>
+
         <div class="feature">
-          <ion-icon class="feature-icon" name="leaf-outline"></ion-icon>
+          <i class="feature-icon ph-bold ph-recycle"></i>
           <p class="feature-title">Sin desperdicio</p>
           <p class="feature-text">
             Usamos contenedores reutilizables para empaquetar todas tus comidas.
           </p>
         </div>
         <div class="feature">
-          <ion-icon class="feature-icon" name="pause-outline"></ion-icon>
+          <i class="feature-icon ph-bold ph-hand-palm"></i>
           <p class="feature-title">Detén en cualquier momento</p>
           <p class="feature-text">
-            ¿Sales de viaje? Pausa tu suscripción, y te reembolsaremos los días no utilizados.
+            ¿Sales de viaje? Detén tu suscripción, y te reembolsamos los días no utilizados.
           </p>
         </div>
       </div>
@@ -548,23 +557,23 @@
     <div class="container grid grid--footer">
       <div class="logo-col">
         <a href="#" class="footer-logo">
-          <img class="logo" alt="Omnifood logo" src="img/omnifood-logo.png" />
+          <img class="logo" alt="Omnifood logo" src="img/NutriBox.svg" />
         </a>
 
         <ul class="social-links">
           <li>
-            <a class="footer-link" href="#"><ion-icon class="social-icon" name="logo-instagram"></ion-icon></a>
+            <a class="footer-link" href="#"><i class="social-icon ph-bold ph-instagram-logo"></i></a>
           </li>
           <li>
-            <a class="footer-link" href="#"><ion-icon class="social-icon" name="logo-facebook"></ion-icon></a>
+            <a class="footer-link" href="#"><i class="social-icon ph-bold ph-facebook-logo"></i></a>
           </li>
           <li>
-            <a class="footer-link" href="#"><ion-icon class="social-icon" name="logo-twitter"></ion-icon></a>
+            <a class="footer-link" href="#"><i class="social-icon ph-bold ph-twitter-logo"></i></a>
           </li>
         </ul>
 
         <p class="copyright">
-          Copyright &copy; 2027 by NutriBox, Inc. Todos los derechos reservados
+          Copyright &copy; 2027 por NutriBox, Inc. Todos los derechos reservados
         </p>
       </div>
 

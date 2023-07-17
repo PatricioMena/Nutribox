@@ -82,7 +82,7 @@ html {
 }
 
 body {
-  font-family: 'Rubik', sans-serif;
+  font-family: 'Roboto', sans-serif;
   line-height: 1;
   font-weight: 400;
   color: #555;
@@ -96,7 +96,6 @@ body {
 /**************************/
 
 .container {
-  /* 1140px */
   max-width: 120rem;
   padding: 0 3.2rem;
   margin: 0 auto;
@@ -141,7 +140,8 @@ body {
 .heading-primary,
 .heading-secondary,
 .heading-tertiary {
-  font-weight: 700;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 600;
   color: #333;
   /* color: #1e240f; */
   /* color: #343a40; */
@@ -197,6 +197,10 @@ body {
   transition: all 0.3s;
 }
 
+.plan-sing-up .btn {
+  width: 100%;
+}
+
 .btn--full:link,
 .btn--full:visited {
   background-color: #8bb277;
@@ -212,9 +216,7 @@ body {
 .btn--outline:visited {
   background-color: #fff;
   color: #555;
-  display: flex;
-  align-items: center;
-  gap: 0.8rem;
+  text-align: center;
 }
 
 .btn--outline:hover,
@@ -229,7 +231,7 @@ body {
 
 .btn-wrapper {
   display: flex;
-  gap: 1.6rem;
+  gap: 2.4rem;
 }
 
 .btn--form {
