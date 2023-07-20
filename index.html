@@ -6,6 +6,15 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+  <meta name="description" content="Comida saludable entregada a tu puerta, todos los días.">
+
+  <title>NutriBox - Comida saludable a tu puerta</title>
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png  ">
+  <link rel="icon" href="/favicon/favicon-16x16.png" type="image/png" sizes="'16x16">
+  <link rel="icon" href="/favicon/favicon-32x32.png" type="image/png" sizes="'32x32">
+  <link rel="manifest" href="/favicon/site.webmanifest">
+
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,30 +33,30 @@
   <!-- From patterns.css -->
   <link href="https://unpkg.com/pattern.css" rel="stylesheet">
 
-  <title>Omnifood</title>
+
 </head>
 <body>
   <header class="header">
-    <div class="nav-wraper">
-      <a href="#">
-        <img class="logo" alt="Omnifood logo" src="img/NutriBox.svg" />
-      </a>
 
-      <nav class="main-nav">
-        <ul class="main-nav-list">
-          <li><a class="main-nav-link" href="#how-it-works">Como funciona</a></li>
-          <li><a class="main-nav-link" href="#meals">Platillos</a></li>
-          <li><a class="main-nav-link" href="#testimonial">Testimonios</a></li>
-          <li><a class="main-nav-link" href="#pricing">Precios</a></li>
-          <li><a class="main-nav-link nav-cta" href="#cta">Comienza</a></li>
-        </ul>
-      </nav>
+    <a href="#">
+      <img class="logo" alt="NutriBox logo" src="img/NutriBox.svg" />
+    </a>
 
-      <button class="btn-mobile-nav">
-        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
-        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
-      </button>
-    </div>
+    <nav class="main-nav">
+      <ul class="main-nav-list">
+        <li><a class="main-nav-link" href="#how-it-works">Como funciona</a></li>
+        <li><a class="main-nav-link" href="#meals">Platillos</a></li>
+        <li><a class="main-nav-link" href="#testimonial">Testimonios</a></li>
+        <li><a class="main-nav-link" href="#pricing">Precios</a></li>
+        <li><a class="main-nav-link nav-cta" href="#cta">Comienza</a></li>
+      </ul>
+    </nav>
+
+    <button class="btn-mobile-nav">
+      <i class="icon-mobile-nav ph-fill ph-list" name="menu-outline"></i>
+      <i class="icon-mobile-nav ph-bold ph-x" name="close-outline"></i>
+    </button>
+
 
   </header>
 
@@ -63,8 +72,8 @@
             El programa de comidas saludables que hará que alcances tus metas. Adaptado a tus gustos personales y necesidades nutricionales.
           </p>
           <div class="btn-wrapper">
-            <a href="#" class="btn btn--full">Inicia una dieta balanceada</a>
-            <a href="#" class="btn btn--outline">Conoce más</a>
+            <a href="#cta" class="btn btn--full">Inicia una dieta balanceada</a>
+            <a href="#how-it-works" class="btn btn--outline">Conoce más</a>
           </div>
 
           <div class="delivered-meals">
@@ -573,7 +582,7 @@
         </ul>
 
         <p class="copyright">
-          Copyright &copy; 2027 por NutriBox, Inc. Todos los derechos reservados
+          Copyright &copy; <span class="year">2027</span> por NutriBox, Inc. Todos los derechos reservados
         </p>
       </div>
 
@@ -621,6 +630,6 @@
     </div>
   </footer>
 
-  <script src="/script.js"></script>
+  <script defer src="/script.js"></script>
 </body>
 </html>

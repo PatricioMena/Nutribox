@@ -68,6 +68,14 @@
     font-size: 50%;
   }
 
+  .nav-wraper {
+    padding: 0;
+  }
+
+  .logo {
+    height: 4rem;
+  }
+
   .hero {
     grid-template-columns: 1fr;
     padding: 0 8rem;
@@ -134,10 +142,13 @@
   /* MOBILE NAVIGATION */
   .btn-mobile-nav {
     display: block;
+    z-index: 9999;
   }
 
   .main-nav {
-    background-color: rgba(255, 255, 255, 0.97);
+    background-color: rgba(255, 255, 255, 0.9);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(10px);
     position: absolute;
     top: 0;
     left: 0;
@@ -162,6 +173,7 @@
 
     /* 3) Hide it from screen readers */
     visibility: hidden;
+    z-index: 2;
   }
 
   .nav-open .main-nav {
