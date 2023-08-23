@@ -99,12 +99,13 @@
 .section-hero {
   /* mask created with:
   https://css-generators.com/wavy-shapes/ */
+
   background-color: #f9f7e8;
-  padding: 4.8rem 0 12.8rem 0;
-  --mask: radial-gradient(60.47px at 50% calc(100% - 82.5px), #000 99%, #0000 101%) calc(50% - 60px)
-      0/120px 100%,
-    radial-gradient(60.47px at 50% calc(100% + 52.5px), #0000 99%, #000 101%) 50% calc(100% - 30px) /
-      120px 100% repeat-x;
+  padding: 4.8rem 0 32rem 0;
+  --mask: radial-gradient(447.21px at 50% calc(100% - 600px), #000 99%, #0000 101%)
+      calc(50% - 400px) 0/800px 100%,
+    radial-gradient(447.21px at 50% calc(100% + 400px), #0000 99%, #000 101%) 50% calc(100% - 200px) /
+      800px 100% repeat-x;
   -webkit-mask: var(--mask);
   mask: var(--mask);
 }
@@ -345,24 +346,25 @@
 
 .section-testimonials {
   background-color: #f9f7e8;
-
-  --mask: radial-gradient(60.47px at 50% 82.5px, #000 99%, #0000 101%) calc(50% - 60px) 0/120px 51%
+  padding: 20rem 0rem 20rem 0rem;
+  --mask: radial-gradient(223.61px at 50% 300px, #000 99%, #0000 101%) calc(50% - 200px) 0/400px 51%
       repeat-x,
-    radial-gradient(60.47px at 50% -52.5px, #0000 99%, #000 101%) 50% 30px/120px calc(51% - 30px)
+    radial-gradient(223.61px at 50% -200px, #0000 99%, #000 101%) 50% 100px/400px calc(51% - 100px)
       repeat-x,
-    radial-gradient(60.47px at 50% calc(100% - 82.5px), #000 99%, #0000 101%) calc(50% - 60px) 100%/120px
-      51% repeat-x,
-    radial-gradient(60.47px at 50% calc(100% + 52.5px), #0000 99%, #000 101%) 50% calc(100% - 30px) /
-      120px calc(51% - 30px) repeat-x;
+    radial-gradient(223.61px at 50% calc(100% - 300px), #000 99%, #0000 101%) 50% 100%/400px 51%
+      repeat-x,
+    radial-gradient(223.61px at 50% calc(100% + 200px), #0000 99%, #000 101%) calc(50% - 200px)
+      calc(100% - 100px) / 400px calc(51% - 100px) repeat-x;
   -webkit-mask: var(--mask);
   mask: var(--mask);
+
   display: grid;
   grid-template-columns: 55fr 45fr;
   align-items: center;
 }
 
 .testimonials-container {
-  padding: 9.6rem 4.8rem 9.6rem 9.6rem;
+  padding: 0rem 4.8rem 0rem 9.6rem;
 }
 
 .testimonials {

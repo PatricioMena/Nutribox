@@ -246,6 +246,15 @@
 /**************************/
 
 @media (max-width: 34em) {
+  .section-hero {
+    --mask: radial-gradient(223.61px at 50% calc(100% - 300px), #000 99%, #0000 101%)
+        calc(50% - 200px) 0/400px 100%,
+      radial-gradient(223.61px at 50% calc(100% + 200px), #0000 99%, #000 101%) 50%
+        calc(100% - 100px) / 400px 100% repeat-x;
+    -webkit-mask: var(--mask);
+    mask: var(--mask);
+  }
+
   .grid {
     row-gap: 4.8rem;
   }
@@ -267,7 +276,7 @@
   }
 
   .hero {
-    padding: 0 3.2rem;
+    padding: 0 3.2rem 12.8rem 3.2rem;
   }
 
   .hero-img {
